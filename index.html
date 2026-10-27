@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#6355a5" />
+    <title>Humidity Magic World · อาณาจักรแห่งความชื้น</title>
+  </head>
+  <body>
+    <canvas id="world" aria-label="โลกเวทมนตร์สามมิติ"></canvas>
+    <div id="hud" hidden>
+      <div class="hud-top">
+        <div class="glass">
+          <small id="stage"></small><strong id="player"></strong
+          ><span id="stats"></span>
+        </div>
+        <button id="pause">พักเกม</button>
+      </div>
+      <div id="objective" class="glass"></div>
+      <div id="hint"></div>
+      <div id="touch">
+        <div id="joystick"><i></i></div>
+        <div class="actions">
+          <button id="run">วิ่ง</button><button id="jump">กระโดด</button
+          ><button id="magic">✦ เวทมนตร์</button>
+        </div>
+      </div>
+    </div>
+    <main id="overlay"></main>
+    <div id="toast" role="status"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
